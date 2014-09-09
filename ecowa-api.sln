@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Data", "src\Ecowa.Data\Ecowa.Data.csproj", "{8ED03808-D95E-406C-AE0E-930EA5246489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Model", "src\Ecowa.Model\Ecowa.Model.csproj", "{30306C3A-49BA-40C8-BF37-40F5823567C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Business", "src\Ecowa.Business\Ecowa.Business.csproj", "{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ED03808-D95E-406C-AE0E-930EA5246489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED03808-D95E-406C-AE0E-930EA5246489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED03808-D95E-406C-AE0E-930EA5246489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED03808-D95E-406C-AE0E-930EA5246489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30306C3A-49BA-40C8-BF37-40F5823567C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30306C3A-49BA-40C8-BF37-40F5823567C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30306C3A-49BA-40C8-BF37-40F5823567C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30306C3A-49BA-40C8-BF37-40F5823567C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
