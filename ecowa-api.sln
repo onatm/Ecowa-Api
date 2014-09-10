@@ -9,7 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Model", "src\Ecowa.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Business", "src\Ecowa.Business\Ecowa.Business.csproj", "{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Api", "src\Ecowa.Api\Ecowa.Api.csproj", "{217FC74B-0AE1-47CB-9961-8C99B289785E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DB188D26-2AC9-46EC-93F7-7A8B95B418F4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecowa.Api", "src\Ecowa.Api\Ecowa.Api.csproj", "{2DB814AB-68C3-42ED-9BB8-A965B09D4C60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +36,10 @@ Global
 		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46C59C9E-088B-4A1D-8E43-66D1AE0FF855}.Release|Any CPU.Build.0 = Release|Any CPU
-		{217FC74B-0AE1-47CB-9961-8C99B289785E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{217FC74B-0AE1-47CB-9961-8C99B289785E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{217FC74B-0AE1-47CB-9961-8C99B289785E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{217FC74B-0AE1-47CB-9961-8C99B289785E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB814AB-68C3-42ED-9BB8-A965B09D4C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB814AB-68C3-42ED-9BB8-A965B09D4C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB814AB-68C3-42ED-9BB8-A965B09D4C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB814AB-68C3-42ED-9BB8-A965B09D4C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
