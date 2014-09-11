@@ -35,20 +35,24 @@
     <Reference Include="Autofac">
       <HintPath>..\..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Autofuzz.Core">
+    <Reference Include="Autofuzz.Core, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Autofuzz.Core.1.0.1\lib\net40\Autofuzz.Core.dll</HintPath>
     </Reference>
     <Reference Include="Autofuzz.Dependency">
       <HintPath>..\..\packages\Autofuzz.Dependency.1.0.1\lib\net40\Autofuzz.Dependency.dll</HintPath>
     </Reference>
-    <Reference Include="Autofuzz.MongoDB">
-      <HintPath>..\..\packages\Autofuzz.MongoDB.1.0.0\lib\net40\Autofuzz.MongoDB.dll</HintPath>
+    <Reference Include="Autofuzz.MongoDB, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Autofuzz.MongoDB.1.0.2\lib\net40\Autofuzz.MongoDB.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>..\..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    <Reference Include="MongoDB.Bson, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Bson.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>..\..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    <Reference Include="MongoDB.Driver, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
