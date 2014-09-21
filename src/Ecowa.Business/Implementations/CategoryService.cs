@@ -3,6 +3,7 @@ using Ecowa.Data;
 using Ecowa.Model;
 using MongoDB.Bson;
 using System;
+using System.Collections.Generic;
 
 namespace Ecowa.Business
 {
@@ -16,6 +17,16 @@ namespace Ecowa.Business
         {
             _repository = repository;
             _mapper = mapper;
+        }
+
+        public IEnumerable<CategoryViewModel> GetAll()
+        {
+            IEnumerable<CategoryEntity> entityList = _repository.Get(x => !string.IsNullOrEmpty(x.Name));
+
+            IEnumerable<CategoryViewModel> modelList = 
+                _mapper.Map<IEnumerable<CategoryEntity>, IEnumerable<CategoryViewModel>>(entityList);
+
+            return modelList;
         }
 
         public CategoryViewModel GetById(string id)

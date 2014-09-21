@@ -1,5 +1,10 @@
-﻿using Microsoft.WindowsAzure.Mobile.Service;
+﻿using Autofuzz.Dependency;
+using Ecowa.Business;
+using Microsoft.WindowsAzure.Mobile.Service;
+using Microsoft.WindowsAzure.Mobile.Service.Config;
+using System.Reflection;
 using System.Web.Http;
+using Autofac;
 
 namespace Ecowa.Api
 {
@@ -9,7 +14,14 @@ namespace Ecowa.Api
         {
             ConfigOptions options = new ConfigOptions();
 
-            HttpConfiguration config = ServiceConfig.Initialize(new ConfigBuilder(options));
+            HttpConfiguration config = ServiceConfig.Initialize(new ConfigBuilder(options, (configuration, builder) =>
+            {
+                BusinessControlStartUp.Run();
+                IContainer container = ServiceControl.Container;
+                IEcowaBusiness business = container.Resolve<IEcowaBusiness>();
+
+                builder.RegisterInstance(business).As<IEcowaBusiness>();
+            }));
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);
 

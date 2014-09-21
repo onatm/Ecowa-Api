@@ -1,4 +1,6 @@
-﻿using Ecowa.Model;
+﻿using Ecowa.Business;
+using Ecowa.Model;
+using Microsoft.WindowsAzure.Mobile.Service.Security;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -6,10 +8,17 @@ using System.Web.Http.Description;
 
 namespace Ecowa.Api.Controllers
 {
-    [AllowAnonymous]
+    [AuthorizeLevel(AuthorizationLevel.User)]
     [RoutePrefix("api/categories")]
     public class CategoryController : ApiController
     {
+        private IEcowaBusiness _business;
+
+        public CategoryController(IEcowaBusiness business)
+        {
+            _business = business;
+        }
+
         [HttpGet]
         [Route("")]
         [ResponseType(typeof(IEnumerable<CategoryViewModel>))]
@@ -17,7 +26,7 @@ namespace Ecowa.Api.Controllers
         {
             IEnumerable<CategoryViewModel> modelList = await Task.Run(() =>
             {
-                return new List<CategoryViewModel> { new CategoryViewModel { Id = "category_id", Name = "category_name" } };
+                return _business.Categories.GetAll();
             });
 
             return Ok(modelList);
