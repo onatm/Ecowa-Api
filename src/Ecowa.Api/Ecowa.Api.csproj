@@ -217,10 +217,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Ecowa.Business\Ecowa.Business.csproj">
       <Project>{46c59c9e-088b-4a1d-8e43-66d1ae0ff855}</Project>
