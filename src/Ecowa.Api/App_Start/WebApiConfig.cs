@@ -1,10 +1,8 @@
-﻿using Autofuzz.Dependency;
+﻿using Autofac;
+using Autofuzz.Dependency;
 using Ecowa.Business;
 using Microsoft.WindowsAzure.Mobile.Service;
-using Microsoft.WindowsAzure.Mobile.Service.Config;
-using System.Reflection;
 using System.Web.Http;
-using Autofac;
 
 namespace Ecowa.Api
 {
